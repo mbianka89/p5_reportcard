@@ -6,17 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import java.util.Arrays;
 
 public class ReportCard extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-
-
-// It`s a Report Card used by only one IT teacher, using Hungarian grading system from 1-5, where 5 is the best grade.
-
+// It`s a Report Card used by only one IT teacher, according to Hungarian numerical grading system.
 
         // Name of the student
         private String mStudentsName;
@@ -26,8 +22,6 @@ public class ReportCard extends AppCompatActivity {
 
         // Numeric grades for subjects
         private int mNumericGrades[];
-
-
 
         // Constant is the IT teacher, who is the only admin of this report card.
 
@@ -70,7 +64,6 @@ public class ReportCard extends AppCompatActivity {
             this.mSubjects = subjects;
         }
 
-
         @Override
         public String toString(){
 
@@ -78,7 +71,4 @@ public class ReportCard extends AppCompatActivity {
                     + "Student`s name: " + mStudentsName + "\n"
                     + "Student`s subjects: " + Arrays.toString(mSubjects) + " " + "Student`s grade: " + Arrays.toString(mNumericGrades);
         }
-
     }
-
-
